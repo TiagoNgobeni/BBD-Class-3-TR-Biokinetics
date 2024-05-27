@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Stylesheet linjk -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Box icons link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- GOOGLE FONTS links -->
+    <title>TR-Biokinetics</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <!-- <img src="Images/Logos/TR-logo.png" alt=""> -->
+                TR-Biokinetics
+            </a>
+        </div>
+        <div class="bx bx-menu-alt-right" id="menu-icon"></div>
+        <ul class="navlist">
+            <li>
+                <a href="#home" id="home-link">Home</a>
+            </li>
+            <li>
+                <a href="About/about.html">About</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="Gallery/gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="#booking" class="bookingBtn" id="bookingBtn">Book Now</a>
+            </li>
+                
+        </ul>
+    </header>
+    <!-- Booking button Form Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!----------------------- Hero section -------------------------------->
+    <main class="hero-section">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Our Biokinetics Practice</h1>
+                <p>Where health is medicine. Achieve your best self with our personalized programs.</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+        </section>
+        <!---------------- FAQs ---------------------->
+
+        <!------------- SERVICES PAGE ---------------->
+
+        <!------------- FOOTER PAGE ------------------->
+        
+    </main>
+    <script src="Scripts/main.js"></script>
+</body>
+</html>
