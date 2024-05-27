@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -12,11 +11,16 @@
     outline: none;
 }
 :root{
-    --main-background-color:rgba(255, 255, 255, 0.95); 
+    --main-background-color:#f4f4f4; 
     --navbar-background-color : linear-gradient(130deg, #9be15d, #1424b3);
     --limegreen :#9be15d;
     --dark-blue: #1424b3;
     --text-color: #fff;
+    --h1-heading: "Roboto Condensed", sans-serif;
+    --other-headings: "Oswald", sans-serif;
+    --paragraph: "Open Sans", sans-serif;
+    --main-logo: "Cedarville Cursive", cursive;
+    --nav-list: "Poppins", sans-serif;
     }
     
 html {
@@ -25,7 +29,8 @@ html {
 body{
     width: 100%;
     height: auto;
-    background: var(--main-background-color);
+    /* background: var(--main-background-color); */
+    background-color: #f4f4f4;
 }
 /********************HEADER PLUS FEEDBACK FORM MODAL STYLES*************************/
 header {
@@ -36,7 +41,6 @@ header {
     width: 100%;
     height: 10vh;
     min-width: 280px;
-    font-family: "poppins", sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,7 +53,11 @@ header {
     padding-left: 20px;
     width: 100%;
     height: auto;
-    /* font-family: cursive; */
+}
+.logo a {
+    font-weight: 900;
+    font-size: 1.3rem;
+    font-family: var(--main-logo);
 }
 .navlist {
     display: flex;
@@ -63,6 +71,7 @@ header {
     font-weight: 900;
     padding: 10px;
     transition: all ease .40s;
+    font-family: var(--nav-list);
 }
 .navlist li{
     margin:  auto;
@@ -182,11 +191,14 @@ form button:hover {
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 20px;
+    font-family: var(--h1-heading);
+    letter-spacing: 5px;
 }
 .hero p {
     font-size: 1.2rem;
     font-weight: 900;
     margin-bottom: 20px;
+    font-family: var(--paragraph);
 }
 .cta-button {
     background: var(--limegreen);
@@ -196,23 +208,25 @@ form button:hover {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
+    font-family: var(--nav-list);
 }
 .cta-button:hover{
-    color: #000;
+    color: white;
     background: var(--dark-blue);
 }
 /**************************** FAQs STYLES ********************************/
 
 section.slideshow-container {
-    font-family: "Open Sans",sans-serif;
+    
     max-width: 850px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    padding: 20px ;
+    padding: 20px;
 }
 
 .faq-title{
+    font-family: var(--h1-heading);
     color: var(--dark-blue);
     text-transform: uppercase;
     text-align: center;
@@ -224,7 +238,6 @@ section.slideshow-container {
 .faq-slide {
     display: none;
     text-align: center;
-   
 } 
 
 .faq-content {
@@ -244,7 +257,7 @@ section.slideshow-container {
 
 .faq-slide p{
     font-size: 23px;
-
+    font-family: var(--paragraph);
 }
 .faq-slide p, .faq-slide ul {
     font-size: 16px;
@@ -257,6 +270,7 @@ section.slideshow-container {
 
 .faq-slide li {
     list-style-type: disc;
+    font-family: var(--paragraph);
 }
 
 .dot-container {
@@ -321,14 +335,16 @@ section.slideshow-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f4f4f4;
+    padding-top: 120px;
+    height: 100vh;
+    
 }
 
 .service-hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(135deg, #32CD32, #1424b3);
+    background: linear-gradient(135deg, #9be15d, #1424b3);
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -342,10 +358,12 @@ section.slideshow-container {
 .service-text-content h1 {
     font-size: 2.5em;
     margin: 0 0 10px;
+    font-family: var(--h1-heading);
 }
 
 .service-text-content p {
     font-size: 1.2em;
+    font-family: var(--paragraph);
 }
 
 .service-image-content img {
@@ -361,7 +379,7 @@ section.slideshow-container {
 }
 
 .services, .why-choose-us {
-    background: linear-gradient(135deg, #ffffff 70%, #32CD32 30%);
+    background: linear-gradient(135deg, #ffffff 70%, #9be15d 30%);
     padding: 20px;
     border-radius: 10px;
     flex: 1;
@@ -369,18 +387,20 @@ section.slideshow-container {
 }
 
 .services h2, .why-choose-us h2 {
-     color:  #1424b3; /*Complementary blue text */
+    color:  #1424b3; /*Complementary blue text */
     margin: 0 0 10px;
+    font-family: var(--other-headings);
 }
 
 .services ul {
     list-style: none;
     padding: 0;
+    font-family: var(--paragraph);
 }
 
 .services li::before {
     content: '• ';
-    color: #32CD32; /* Lime bullet points */
+    color: #9be15d; /* Lime bullet points */
     font-size: 1.2em;
 }
 
@@ -392,7 +412,7 @@ section.slideshow-container {
 }
 
 .services li:hover {
-    background-color: #32CD32; /* Lime green background on hover */
+    background-color: var(--limegreen); /* Lime green background on hover */
     color: white; /* White text on hover */
     border-radius: 5px;
     padding: 5px;
@@ -402,10 +422,11 @@ section.slideshow-container {
 .why-choose-us p {
     font-size: 1.1em;
     margin: 10px 0;
+    font-family: var(--paragraph);
 }
 
 .why-choose-us button {
-    background-color: #0000FF; /* Blue button */
+    background-color: #005A9C; /* Blue button */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -413,10 +434,13 @@ section.slideshow-container {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-family: var(--nav-list);
+    font-weight: 700;
 }
 
 .why-choose-us button:hover {
-    background-color: #005A9C; /* Complementary blue on hover */
+    background-color: #0000FF; /* Complementary blue on hover */
+    transform: translateY(+1px);
 }
 
 /* ----- Media Queries for Responsive Design ----- */
@@ -505,14 +529,14 @@ section.slideshow-container {
 
 /********************* FOOTER STYLES *********************************/
 body footer {
-    font-family: Arial, sans-serif;
+    font-family: var(--other-headings);
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 footer {
-    background: linear-gradient(135deg, #32CD32, #1424b3);
+    background: linear-gradient(135deg, #9be15d, #1424b3);
     color: white;
     padding: 40px 0;
 }
@@ -536,7 +560,7 @@ footer {
     flex-direction: column;
     gap: 20px;
     background: #ffffff; /* White background with a hint of green */
-    background: linear-gradient(135deg, #ffffff 70%, #32CD32 30%);
+    background: linear-gradient(135deg, #ffffff 70%, #9be15d 30%);
     padding: 20px;
     border-radius: 10px;
     color: #005A9C; /* Complementary blue text */
@@ -555,14 +579,15 @@ footer {
 
 .footer-map h2 {
         font-size: 1.1em;
-        color: #32CD32;
+        color: var(--limegreen);
+        font-family: var(--other-headings);
 }
 
 .footer-logos {
     grid-area: logos;
     text-align: center;
     background: #ffffff; /* White background with a hint of lime */
-    background: linear-gradient(135deg, #ffffff 70%, #32CD32 30%);
+    background: linear-gradient(135deg, #f4f4f4 70%, #9be15d 30%);
     padding: 20px;
     border-radius: 10px;
     color: #1424b3; 
@@ -586,6 +611,8 @@ footer {
 .footer-links ul {
     list-style: none;
     padding: 0;
+    font-family: var(--paragraph);
+    font-size: 1.1em;
 }
 
 .footer-links li {
@@ -599,20 +626,21 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #32CD32;       
+    color: var(--limegreen);       
 }
 
 .footer-contact p:hover {
-   color: #32CD32;
+   color: var(--limegreen);
    transform: translateY(-5px);
 }
 
-.footer-contact p i {
-   font-size: 1.5em;
+.footer-contact p {
+   font-size: 1.2em;
+   font-family: var(--paragraph);
 }
 
 .footer-contact p i:hover {
-   color: #32CD32;
+   color: var(--limegreen);
    transform: translateY(-5px);
 }
 
@@ -621,13 +649,12 @@ footer {
     font-size: 2.2em;
     margin-right: 10px;
     text-decoration: none;
-    color: #32CD32; /* Lime green text */
+    color: var(--limegreen); /* Lime green text */
     background-color: #fff; /* White background */
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 
 .footer-social .social-icon:hover {
     background-color: #1424b3; 
