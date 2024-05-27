@@ -321,13 +321,7 @@ section.slideshow-container {
     background-color: var(--limegreen);
     border-radius: 3px 0 0 3px;
 }
-/* 
-.prev:hover{
-    background-color: var(--dark-blue);
-}
-.next:hover {
-    background-color: var(--limegreen);
-}  */
+
 
 /*********************** SERVICES STYLES ********************************/
 .service-container {
@@ -442,6 +436,113 @@ section.slideshow-container {
     background-color: #0000FF; /* Complementary blue on hover */
     transform: translateY(+1px);
 }
+
+/* Gallery start */
+.gallery{
+    font-family: "Poppins", sans-serif ;
+    max-width: 50%;
+    margin: 120px  auto  0px  auto;
+    height: auto;
+  
+  }
+  
+  .gallery-tittle h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.25rem 0.625rem 1.5rem  0.625rem ;
+    letter-spacing: .4rem;
+    margin-bottom: 50px;
+    color: #39b385 ;
+  }
+
+ 
+  
+  .column{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .5rem;
+  }
+  
+  .column img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .column img:hover{
+    transform: scale(1.2);
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  
+  .galley figure {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    
+    animation-timing-function: ease-in-out;
+  }
+  
+  
+  .gallery-title h1 {
+    animation-name: bounceIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+  }
+  
+  
+  @keyframes bounceInMantra {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  
+  .mantra-list {
+    animation-name: bounceInMantra;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+  }
+  
+  
+  
+  .gallery figure:nth-child(odd) {
+    animation-name: slideInFromLeft;
+  }
+  
+  .gallery figure:nth-child(even) {
+    animation-name: slideInFromRight;
+  }
+  
 
 /* ----- Media Queries for Responsive Design ----- */
 @media (max-width: 1024px) {
@@ -788,7 +889,12 @@ footer {
     .faq-slide p, .faq-slide ul {
         font-size: 14px;
     }
+    .gallery-tittle h1{
+        font-size: 2rem; 
+        padding: 1.25em 0.625em; 
+    }
 }
+
 
 @media (max-width: 630px){
     .hero-content {
@@ -816,3 +922,12 @@ footer {
         font-size: 12px;
     }
 }
+
+
+  
+@media screen and (max-width: 376px){
+    
+    .gallery-tittle h1{
+        font-size: 1.5rem;
+    }
+     }
