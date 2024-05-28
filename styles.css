@@ -439,20 +439,19 @@ section.slideshow-container {
 
 /* Gallery start */
 .gallery{
-    font-family: "Poppins", sans-serif ;
-    max-width: 50%;
-    margin: 120px  auto  0px  auto;
+    margin-top:90px ;
     height: auto;
   
   }
   
   .gallery-tittle h1 {
+    font-family: var(--h1-heading);
     text-align: center;
     text-transform: uppercase;
     padding: 1.25rem 0.625rem 1.5rem  0.625rem ;
     letter-spacing: .4rem;
     margin-bottom: 50px;
-    color: #39b385 ;
+    color: var(--dark-blue) ;
   }
 
  
@@ -461,7 +460,11 @@ section.slideshow-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .5rem;
+    width: 950px;
+    margin: 0 auto;
+
   }
+  
   
   .column img{
     width: 100%;
@@ -498,7 +501,7 @@ section.slideshow-container {
   }
   
   
-  .galley figure {
+  .gallery figure {
     animation-duration: 0.5s;
     animation-fill-mode: both;
     
@@ -506,7 +509,7 @@ section.slideshow-container {
   }
   
   
-  .gallery-title h1 {
+  .gallery-tittle h1 {
     animation-name: bounceIn;
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -890,8 +893,8 @@ footer {
         font-size: 14px;
     }
     .gallery-tittle h1{
-        font-size: 2rem; 
-        padding: 1.25em 0.625em; 
+        font-size: 2.5rem; 
+        margin-left: 8rem;
     }
 }
 
@@ -921,16 +924,11 @@ footer {
     .faq-slide p, .faq-slide ul {
         font-size: 12px;
     }
+
+    
 }
 
 
-  
-@media screen and (max-width: 376px){
-    
-    .gallery-tittle h1{
-        font-size: 1.5rem;
-    }
-     }
 
   /****************************About***********************************************/
 .vision-mission {
