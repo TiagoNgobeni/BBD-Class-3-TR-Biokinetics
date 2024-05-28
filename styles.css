@@ -433,7 +433,7 @@ section.slideshow-container {
 }
 
 .why-choose-us button:hover {
-    background-color: #0000FF; /* Complementary blue on hover */
+    background-color: var(--limegreen); /* Complementary lime on hover */
     transform: translateY(+1px);
 }
 
@@ -658,6 +658,10 @@ footer {
     padding: 20px;
 }
 
+.footer-grid h3 {
+   font-family: var(--other-headings); 
+}
+
 .footer-info {
     grid-area: info;
     display: flex;
@@ -741,12 +745,27 @@ footer {
 .footer-contact p {
    font-size: 1.2em;
    font-family: var(--paragraph);
+   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-contact p i:hover {
    color: var(--limegreen);
-   transform: translateY(-5px);
 }
+
+.footer-visit p:hover {
+    color: var(--limegreen);
+    transform: translateY(-5px);
+ }
+ 
+ .footer-visit p {
+    font-size: 1.2em;
+    font-family: var(--paragraph);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+ }
+ 
+ .footer-visit p i:hover {
+    color: var(--limegreen);
+ }
 
 .footer-social .social-icon {
     display: inline-block;
