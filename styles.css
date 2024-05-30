@@ -12,7 +12,7 @@
 }
 :root{
     --main-background-color:#f4f4f4; 
-    --navbar-background-color : linear-gradient(130deg, #9be15d, #1424b3);
+    --navbar-background-color : linear-gradient(5deg, #9be15d, #1424b3);
     --limegreen :#9be15d;
     --dark-blue: #1424b3;
     --text-color: #fff;
@@ -39,7 +39,7 @@ header {
     right: 0;
     z-index: 1000;
     width: 100%;
-    height: 10vh;
+    height: 14vh;
     min-width: 280px;
     display: flex;
     align-items: center;
@@ -49,16 +49,12 @@ header {
     transition: all ease .50s;
     background: var(--navbar-background-color);
 }
-.logo {
-    padding-left: 20px;
-    width: 100%;
-    height: auto;
+.logo img{
+    padding: 40px 0 10px 20px ;
+    width: auto;
+    height: 25vh;
 }
-.logo a {
-    font-weight: 900;
-    font-size: 1.3rem;
-    font-family: var(--main-logo);
-}
+
 .navlist {
     display: flex;
     align-items: center;
@@ -68,7 +64,7 @@ header {
 .navlist a {
     color: var(--text-color);
     font-size: 1.2rem;
-    font-weight: 900;
+    font-weight: 530;
     padding: 10px;
     text-transform: uppercase;
     transition: all ease .40s;
@@ -116,24 +112,26 @@ header {
     padding-top: 60px;
 }
 .modal-content {
-    background-color: #00bfff;
+    background-color: var(--main-background-color);
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    font-weight: 550;
     max-width: 500px;
     border-radius: 10px;
-    color: var(--text-color);
+    color: var(--dark-blue);
 }
 .close {
-    color: var(--text-color);
+    color: var(--dark-blue);
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 .close:hover,
 .close:focus {
-    color: #000;
+    color: var(--limegreen);
     text-decoration: none;
     cursor: pointer;
 }
@@ -149,6 +147,7 @@ form input {
     margin-bottom: 1rem;
     border: none;
     border-radius: 5px;
+    border: 1px solid  #a5b994;
 }
 form button {
     padding: 0.5rem;
@@ -156,6 +155,7 @@ form button {
     color: white;
     border: none;
     border-radius: 5px;
+    font-weight: 550;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -215,6 +215,8 @@ form button:hover {
     color: white;
     background: var(--dark-blue);
 }
+
+
 /**************************** FAQs STYLES ********************************/
 
 section.slideshow-container {
@@ -232,7 +234,8 @@ section.slideshow-container {
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-top: 90px;
+    /* margin-bottom: 20px; */
 }
 
 
@@ -795,6 +798,9 @@ footer {
     }
 }
 @media (max-width: 940px){
+    .navlist a, .navlist .bookingBtn{
+        font-weight: 399;
+    }
     .hero h1 {
         font-size: 3rem;
         font-weight: 900;
