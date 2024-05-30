@@ -58,8 +58,9 @@ header {
 .navlist {
     display: flex;
     align-items: center;
-    width: 55%;
+    width: 40%;
     margin: 0 20px 0 0;
+    letter-spacing: 1.8px;
 }
 .navlist a {
     color: var(--text-color);
@@ -222,10 +223,11 @@ form button:hover {
 section.slideshow-container {
     
     max-width: 850px;
-    margin: 0 auto;
+    margin:0  auto;
     position: relative;
     overflow: hidden;
     padding: 20px;
+    height:90vh;
 }
 
 .faq-title{
@@ -234,8 +236,9 @@ section.slideshow-container {
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
-    margin-top: 90px;
-    /* margin-bottom: 20px; */
+    margin-top: 185px;
+    padding-bottom: 30px;
+   
 }
 
 
@@ -301,7 +304,7 @@ section.slideshow-container {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 55%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
@@ -759,44 +762,15 @@ footer {
         width: 55%;
     }
 }
-@media (max-width: 1350px){
-    .navlist {
-        width: 60%;
-    }
-}
-@media (max-width: 1290px){
-    .navlist {
-        width: 65%;
-    }
-}
-@media (max-width: 1225px){
-    .navlist {
-        width: 70%;
-    }
-}
-@media (max-width: 1225px){
-    .navlist {
-        width: 80%;
-    }
-}
-@media (max-width: 1170px){
-    .navlist {
-        width: 75%;
-    }
-}
+
+
 @media (max-width: 1150px){
-    .navlist {
-        width: 80%;
-    }
+   
     .navlist a, .navlist .bookingBtn{
         font-size: 1rem;
     }
 }
-@media (max-width: 1090px){
-    .navlist {
-        width: 100%;
-    }
-}
+
 @media (max-width: 940px){
     .navlist a, .navlist .bookingBtn{
         font-weight: 399;
@@ -820,7 +794,7 @@ footer {
     }
     .navlist {
         position: absolute;
-        width: 100%;
+        /* width: 100%; */
         height: 90vh;
         top: -2000px;
         right: 0;
@@ -847,6 +821,17 @@ footer {
     .navlist.open {
         top: 100%;
     }
+    section.slideshow-container{
+        margin: 0px 20px 0px 20px;
+    }
+
+    .prev, .next{
+        top:50%;
+    }
+    .faq-content{
+        height: auto;
+    }
+
 }
 @media (max-width: 768px) {
     .faq-slide h2 {
@@ -874,14 +859,29 @@ footer {
         font-weight: 900;
         margin-bottom: 20px;
     }
+    .faq-slide h2 {
+        font-size: 17px;
+    }
+    .faq-slide p, .faq-slide ul {
+        font-size: 14px;
+    } 
+    .faq-content{
+        height: auto;
+    }
+
+    
 }
 @media (max-width: 480px) {
     .faq-slide h2 {
         font-size: 16px;
     }
     .faq-slide p, .faq-slide ul {
-        font-size: 12px;
-    }    
+        font-size: 14px;
+    }   
+    
+    .faq-content{
+        height: auto;
+    }
 }
   /****************************About***********************************************/
 .vision-mission {
