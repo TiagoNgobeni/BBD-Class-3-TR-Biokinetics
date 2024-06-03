@@ -216,10 +216,7 @@ form button:hover {
     color: white;
     background: var(--dark-blue);
 }
-
-
 /**************************** FAQs STYLES ********************************/
-
 section.slideshow-container {
     
     max-width: 850px;
@@ -229,7 +226,6 @@ section.slideshow-container {
     padding: 20px;
     height:90vh;
 }
-
 .faq-title{
     font-family: var(--h1-heading);
     color: var(--dark-blue);
@@ -240,13 +236,10 @@ section.slideshow-container {
     padding-bottom: 30px;
    
 }
-
-
 .faq-slide {
     display: none;
     text-align: center;
 } 
-
 .faq-content {
     background: var(--navbar-background-color); 
     color: var(--text-color);
@@ -255,13 +248,11 @@ section.slideshow-container {
     box-shadow: 0 4px 8px rgba(238, 236, 236, 0.1);
     padding: 25px;
 }
-
 .faq-slide h2 {
     font-family: "Oswald",sans-serif;
     margin-bottom: 4px;
     font-size: 30px;
 }
-
 .faq-slide p{
     font-size: 23px;
     font-family: var(--paragraph);
@@ -270,21 +261,17 @@ section.slideshow-container {
     font-size: 16px;
     line-height: 1.6;
 }
-
 .faq-slide ul {
     padding-left: 20px;
 }
-
 .faq-slide li {
     list-style-type: disc;
     font-family: var(--paragraph);
 }
-
 .dot-container {
     text-align: center;
     margin-top: 20px;
 }
-
 .dot {
     height: 10px;
     width: 10px;
@@ -294,13 +281,10 @@ section.slideshow-container {
     display: inline-block;
     transition: background-color 0.3s ease;
 }
-
 .active {
     
     background-color: var(--main-background-color);
 }
-
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -315,21 +299,17 @@ section.slideshow-container {
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-
 .prev {
     left: 0;
     color: var(--main-background-color);
     background-color: var(--limegreen);
 }
-
 .next {
     right: 0;
     color: var(--main-background-color);
     background-color: var(--limegreen);
     border-radius: 3px 0 0 3px;
 }
-
-
 /*********************** SERVICES STYLES ********************************/
 .service-container {
     width: 100%;
@@ -337,10 +317,8 @@ section.slideshow-container {
     margin: 0 auto;
     padding: 20px;
     padding-top: 120px;
-    height: auto;
-    
+    height: auto;   
 }
-
 .service-hero-section {
     display: flex;
     align-items: center;
@@ -350,35 +328,29 @@ section.slideshow-container {
     padding: 20px;
     border-radius: 10px;
 }
-
 .service-text-content {
     flex: 1;
     padding: 0 20px;
 }
-
 .service-text-content h1 {
     font-size: 2.5em;
     margin: 0 0 10px;
     font-family: var(--h1-heading);
 }
-
 .service-text-content p {
     font-size: 1.2em;
     font-family: var(--paragraph);
 }
-
 .service-image-content img {
     width: 300px;
     border-radius: 10px;
 }
-
 .service-content-section {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin: 20px 0;
 }
-
 .services, .why-choose-us {
     background: linear-gradient(135deg, #ffffff 70%, #9be15d 30%);
     padding: 20px;
@@ -386,32 +358,27 @@ section.slideshow-container {
     flex: 1;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
 .services h2, .why-choose-us h2 {
     color:  #1424b3; /*Complementary blue text */
     margin: 0 0 10px;
     font-family: var(--other-headings);
 }
-
 .services ul {
     list-style: none;
     padding: 0;
     font-family: var(--paragraph);
 }
-
 .services li::before {
     content: '• ';
     color: #9be15d; /* Lime bullet points */
     font-size: 1.2em;
 }
-
 .services li {
     margin: 5px 0;
     font-size: 1.1em;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
 }
-
 .services li:hover {
     background-color: var(--limegreen); /* Lime green background on hover */
     color: white; /* White text on hover */
@@ -419,13 +386,11 @@ section.slideshow-container {
     padding: 5px;
     transform: scale(1.1); /* Slightly increases the size of the list item */
 }
-
 .why-choose-us p {
     font-size: 1.1em;
     margin: 10px 0;
     font-family: var(--paragraph);
 }
-
 .why-choose-us button {
     background-color: #005A9C; /* Blue button */
     color: white;
@@ -438,12 +403,10 @@ section.slideshow-container {
     font-family: var(--nav-list);
     font-weight: 700;
 }
-
 .why-choose-us button:hover {
     background-color: var(--limegreen); /* Complementary lime on hover */
     transform: translateY(+1px);
 }
-
 /*************** Gallery start *******************/
 .gallery{
     font-family: var(--main-background-color);
@@ -496,11 +459,11 @@ section.slideshow-container {
     0% {
         opacity: 0;
         transform: translateX(100%);
-}
-100% {
-    opacity: 1;
-    transform: translateX(0);
-}
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .gallery figure {
     animation-duration: 0.5s;
@@ -523,7 +486,6 @@ section.slideshow-container {
     transform: scale(1);
     }
 }
-
 .gallery figure:nth-child(odd) {
     animation-name: slideInFromLeft;
 }  
@@ -597,8 +559,6 @@ section.slideshow-container {
         transform: translateY(0);
     }
 }
-/****************** End of SERVICES PAGE ****************/
-
 /********************* FOOTER STYLES *********************************/
 body footer {
     font-family: var(--other-headings);
@@ -629,7 +589,6 @@ footer {
     grid-area: info;
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
     background: #ffffff; /* White background with a hint of green */
     background: linear-gradient(135deg, #ffffff 70%, #9be15d 30%);
     padding: 20px;
@@ -682,7 +641,7 @@ footer {
     margin: 5px 0;
 }
 .footer-links a {
-    color: #005A9C; /* Complementary blue text */
+    color: #005A9C;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -713,7 +672,6 @@ footer {
  .footer-visit p i:hover {
     color: var(--limegreen);
  }
-
  .footer-social{
     margin-top: 12px;
  }
@@ -751,8 +709,6 @@ footer {
         width: 100%;
     }
 }
-/************ End of FOOTER STYLES **********/
-
 /******************* MEDIA QUERIES *********************************************/
 /* NAVIGATION BAR MEDIA QUERIES */
 @media (max-width: 1410px){
@@ -766,21 +722,16 @@ footer {
         top: 60%;
     }
 }
-
 @media (max-width: 1024px){
     .prev, .next{
         top: 70%;
-       }
+    }
 }
-
-
-@media (max-width: 1150px){
-   
+@media (max-width: 1150px){  
     .navlist a, .navlist .bookingBtn{
         font-size: 1rem;
     }
 }
-
 @media (max-width: 940px){
     .navlist a, .navlist .bookingBtn{
         font-weight: 399;
@@ -797,8 +748,7 @@ footer {
     }
     .prev, .next{
         top: 30%;
-       }
-
+    }
 }
 @media (max-width:870px) {
     #menu-icon {
@@ -809,7 +759,7 @@ footer {
     .navlist {
         position: absolute;
         width:100%;
-        height: 90vh;
+        height: 80vh;
         top: -2000px;
         right: 0;
         left: 0;
@@ -838,20 +788,17 @@ footer {
     section.slideshow-container{
         margin: 0px 20px 0px 20px;
     }
-
     .prev, .next{
         top:34%;
     }
     .faq-content{
         height: auto;
     }
-
 }
 @media (max-width: 768px) {
     .faq-slide h2 {
         font-size: 18px;
     }
-
     .faq-slide p, .faq-slide ul {
         font-size: 14px;
     }
@@ -862,7 +809,6 @@ footer {
         top: 55%;
     }
 }
-
 @media (max-width: 630px){
     .hero-content {
         max-width: 280px;
@@ -888,8 +834,7 @@ footer {
     }
     .faq-content{
         height: 260px;
-    }  
-    
+    }
 }
 @media (max-width: 480px) {
     .faq-slide h2 {
@@ -897,8 +842,7 @@ footer {
     }
     .faq-slide p, .faq-slide ul {
         font-size: 12px;
-    }   
-    
+    }  
     .prev, .next{
         top: 40%;
     }
@@ -909,22 +853,17 @@ footer {
     .footer-links ul, 
     .footer-visit p {
         font-size: 15px;
-     }
-     .footer-social .social-icon{
+    }
+    .footer-social .social-icon{
         font-size: 23px;
-     }
+    }
 } 
-
 @media (max-width: 430px){
     .prev, .next{
         top:50%;
-       }
+    }
 }
-
-
-
 @media (max-width: 425px){
-
     .Ruth-Pic img{
         width: 200px;
     }
@@ -932,14 +871,11 @@ footer {
         margin-top: 40px;
         margin-left: 20px;
         height: 200px; 
-        width: 100px;
-        
+        width: 100px;   
     }
     .Tebogo-Pic img{
         width:220px;
     }
-
-
     .Tebogo-Pic::before{
         margin-top: 10px;
         margin-left: 5px;
@@ -948,47 +884,31 @@ footer {
         width: 300px;
     }
 }
-
-
- /* @media (max-width: 414px){
-    .prev{
-       margin-right:50px ;
-
-       }
-}  */
 @media (max-width: 412px){
     .prev, .next{
         top: 50%;
-       }
+    }
 }
-
 @media (max-width: 390px){
     .prev, .next{
         top: 70%;
-       }
+    }
 }
-
-
 @media (max-width: 375px){
     .prev, .next{
         top: 50%;
-    }
-    
+    }   
 }
-
-  @media (max-width: 360px){
-        .prev, .next{
-            top: 55%;
-           }
+@media (max-width: 360px){
+    .prev, .next{
+        top: 55%;
     }
-
-    @media (max-width: 344px){
-        .prev, .next{
-            top: 50%;
-           }
+}
+@media (max-width: 344px){
+    .prev, .next{
+        top: 50%;
     }
-
-
+}
   /****************************About***********************************************/
   .about-section{
     width: 100%;
@@ -1071,15 +991,11 @@ footer {
         flex-direction: row;
         justify-content: space-around;
     }
-
     .box {
         width: 45%;
         margin-bottom: 0;
     }
 }
-
-/*About-Us CSS Ends */
-
 /*About us 2*/
 .tittle1 {
     font-family: var(--h1-heading);
@@ -1134,22 +1050,17 @@ footer {
     display: flex;
     align-items: center;
     gap: 100px;
-    /* margin-bottom: 100px; */
     padding: 30px;
 }
-
 .Ruth-Pic{
     margin-right: 70px;
 }
 .Ruth-Pic img{
     width: 300px;
 }
-
 .Tebogo-Pic img{
  width: 280px;
 }
-   
-
 .Ruth-Pic::before{
     content: " ";
     border: 4px solid rgba(204, 243, 129, 0.4);
@@ -1161,7 +1072,6 @@ footer {
     width: 22rem;
     height: 200px; 
     max-width: 350px;
-    
 }
 .Tebogo-Pic::before{
     content: " ";
@@ -1174,8 +1084,7 @@ footer {
     z-index: -7;
     width: 20rem; 
     height: 200px; 
-    max-width: 350px;
-   
+    max-width: 350px;  
 }
 .Ruth-About,.TebogopAbout{
     width: 100%;
@@ -1190,7 +1099,6 @@ footer {
     /* text-align: center; */
     padding: 2rem 0 0 0;
 }
-
 .About-Us-Paragraph {
     font-family: var(--paragraph);
     font-size: 1.2rem;
@@ -1202,70 +1110,43 @@ footer {
 .box h2{
     color: #000;
 }
-
-
 @media (min-width: 600px) {
     .vision-mission {
         flex-direction: row;
         justify-content: space-around;
     }
-
     .box {
         width: 45%;
         margin-bottom: 0;
     }
 }
-
 @media (max-width: 768px) {
     .head {
         font-size: 2rem;
     }
-
     .names {
         font-size: 1.5rem;
     }
-
     .specilise {
         font-size: 1.25rem;
     }
-
-    /* .Ruth-Pic img,
-    .Tebogo-Pic img {
-        max-width: 200px;
-    } */
-
     .wrap1, .wrap2 {
         flex-direction: column;
         align-items: center;
     }
-
-    /* .Ruth-Pic, .Tebogo-Pic {
-        margin-bottom: 1rem;
-    } */
 }
-
 @media (max-width: 480px) {
     .head {
         font-size: 1.5rem;
     }
-
     .names {
         font-size: 1.25rem;
     }
-
     .specilise {
         font-size: 1rem;
     }
-
-    /* .Ruth-Pic img,
-    .Tebogo-Pic img {
-        max-width: 480px;
-    } */
-
     .line,
     .line_2 {
         width: 80%;
-    }}
-
-/****************************About-Us Styling_Ends********************************/
- 
+    }
+}
