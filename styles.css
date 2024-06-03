@@ -129,7 +129,6 @@ header {
     font-size: 28px;
     font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
     color: var(--limegreen);
@@ -512,6 +511,9 @@ section.slideshow-container {
     .service-content-section {
         flex-direction: column;
         gap: 10px;
+    }
+    .modal{
+        top: 100px;
     }
 }
 @media (max-width: 768px) {
